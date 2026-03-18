@@ -1,4 +1,3 @@
-// Main React imports
 import { useState, useEffect } from "react"; // useState stores data and useEffects will be used later to fetch data from API
 import "./App.css";
 // Main App component
