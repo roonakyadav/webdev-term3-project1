@@ -66,7 +66,7 @@ function App() { // In React, everything is a function that returns UI. This is 
       return 0;
     });
 
-  return ( // This is just HTML in javascript, called JSX. It will be rendered as UI in the browser.
+  return ( 
     <div>
       <h1>Blood Donor Finder</h1>
 
