@@ -3,10 +3,8 @@ import "./App.css";
 // Main App component
 function App() { // In React, everything is a function that returns UI. This is our main component where we will build our app.
 
-  // state to store all donors
   const [donors, setDonors] = useState([]); // donors: data, setDonors: function to update data, useState([]): initialize with empty array
 
-  // loading state to show spinner/text
   const [loading, setLoading] = useState(true); // means initially we are loading data
   // state to store selected blood group filter
   const [selectedGroup, setSelectedGroup] = useState("");
