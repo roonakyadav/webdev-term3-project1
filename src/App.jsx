@@ -24,20 +24,16 @@ function App() { // In React, everything is a function that returns UI. This is 
         const data = await response.json();
         console.log(data);
 
-        // store data in donors state
-        // adding blood group manually to each donor (since API doesn't provide it)
         const bloodGroups = ["A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-"];
 
         const donorsWithBlood = data.map((donor, index) => ({
           ...donor,
-          bloodGroup: bloodGroups[index % bloodGroups.length], // assigning blood group in cycle
+          bloodGroup: bloodGroups[index % bloodGroups.length], 
           availability: index % 2 === 0 ? "Available" : "Busy"
         }));
 
-        // store updated donors
         setDonors(donorsWithBlood);
 
-        // stop loading
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
