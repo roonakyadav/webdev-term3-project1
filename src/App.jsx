@@ -15,7 +15,6 @@ function App() { // In React, everything is a function that returns UI. This is 
   // state for sorting
   const [sortOrder, setSortOrder] = useState("");
 
-  // useEffect runs after component loads (used here for API call)
   useEffect(() => {
 
     // function to fetch donor data
